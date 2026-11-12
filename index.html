@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohak Singh — Portfolio</title>
+  <meta name="description" content="Jobs, achievements, experiences and skills of Mohak Singh.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to experience</a>
+
+  <p class="sample-note" id="sample-note" hidden>
+    You're looking at sample content. Replace it in <code>data/content.js</code>.
+  </p>
+
+  <header class="hero">
+    <h1 class="name" id="name"></h1>
+    <p class="headline" id="headline"></p>
+    <p class="now" id="now"></p>
+    <p class="summary" id="summary"></p>
+    <nav class="links" id="links" aria-label="Contact and profiles"></nav>
+  </header>
+
+  <main id="work" class="work">
+    <aside class="skills" aria-labelledby="skills-title">
+      <div class="skills-inner">
+        <h2 id="skills-title">Skills</h2>
+        <p class="hint">Pick a skill to see where I've used it.</p>
+        <div id="skill-groups"></div>
+      </div>
+    </aside>
+
+    <section class="timeline-wrap" aria-labelledby="timeline-title">
+      <div class="timeline-head">
+        <h2 id="timeline-title">Experience</h2>
+        <div class="filters" role="group" aria-label="Show">
+          <button type="button" data-type="all" aria-pressed="true">Everything</button>
+          <button type="button" data-type="job" aria-pressed="false">Jobs</button>
+          <button type="button" data-type="achievement" aria-pressed="false">Achievements</button>
+          <button type="button" data-type="experience" aria-pressed="false">Experiences</button>
+        </div>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <h2>Let's talk</h2>
+    <p>Open to new roles and collaborations.</p>
+    <nav class="links" id="links-footer" aria-label="Contact"></nav>
+  </footer>
+
+  <script src="data/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
